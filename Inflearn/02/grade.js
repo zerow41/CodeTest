@@ -1,13 +1,15 @@
 const solution = (arr) => {
   let answer = 0;
+  let cnt = 0;
+  for (let x of arr) {
+    if (x === 1) {
+      cnt++;
+      answer += cnt;
+    } else cnt = 0;
+  }
 
   return answer;
 };
-let arr = [
-  [10, 13, 10, 12, 15],
-  [12, 39, 30, 23, 11],
-  [11, 25, 50, 53, 15],
-  [19, 27, 29, 37, 27],
-  [19, 13, 30, 13, 19],
-];
+
+let arr = [1, 0, 1, 1, 1, 0, 0, 1, 1, 0];
 console.log(solution(arr));
