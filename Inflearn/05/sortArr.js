@@ -1,4 +1,5 @@
 solution = (arr1, arr2) => {
+  // sort nlogn, two-pointer n+m
   let answer = [];
   let n = arr1.length;
   let m = arr2.length;

@@ -1,8 +1,10 @@
 solution = (m, product) => {
   let answer = 0;
   let n = product.length;
+  // 총비용으로 정렬
   product.sort((a, b) => a[0] + a[1] - (b[0] + b[1]));
   for (let i = 0; i < n; i++) {
+    // 어떤 상품을 할인받는게 가장 효율적인지 확인
     let money = m - (product[i][0] / 2 + product[i][1]);
     let cnt = 1;
     for (let j = 0; j < n; j++) {

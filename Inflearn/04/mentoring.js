@@ -3,6 +3,7 @@ solution = (arr) => {
   let m = arr.length;
   let n = arr[0].length;
 
+  // i 멘토, j 멘티인 경우 가능한지 k, s로 확인
   for (let i = 1; i <= n; i++) {
     for (let j = 1; j <= n; j++) {
       let cnt = 0;
